@@ -3,6 +3,6 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
   document.body.innerHTML = "";
 }
 
-function a () {
+function a() {
   wnd = window.open("https://linktr.ee/zenpaiang");
 }
