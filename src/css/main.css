@@ -1,0 +1,123 @@
+@font-face {
+  font-family: SFPro;
+  src: url(/src/fonts/SFPro.otf);
+}
+
+@media all and (min-width: 100px)  {  body  { font-size: 0.22em; } }
+@media all and (min-width: 200px)  {  body  { font-size: 0.45em; } }
+@media all and (min-width: 300px)  {  body  { font-size: 0.67em; } }
+@media all and (min-width: 400px)  {  body  { font-size: 0.90em; } }
+@media all and (min-width: 500px)  {  body  { font-size: 1.12em; } }
+@media all and (min-width: 600px)  {  body  { font-size: 1.35em; } }
+@media all and (min-width: 700px)  {  body  { font-size: 1.57em; } }
+@media all and (min-width: 800px)  {  body  { font-size: 1.80em; } }
+@media all and (min-width: 900px)  {  body  { font-size: 2.02em; } }
+@media all and (min-width: 1000px) {  body  { font-size: 2.25em; } }
+@media all and (min-width: 1100px) {  body  { font-size: 2.47em; } }
+@media all and (min-width: 1200px) {  body  { font-size: 2.70em; } }
+@media all and (min-width: 1300px) {  body  { font-size: 2.92em; } }
+@media all and (min-width: 1400px) {  body  { font-size: 3.15em; } }
+@media all and (min-width: 1500px) {  body  { font-size: 3.37em; } }
+@media all and (min-width: 1600px) {  body  { font-size: 3.60em; } }
+@media all and (min-width: 1700px) {  body  { font-size: 4.47em; } }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  user-select: none;
+  transition: 0.5s;
+}
+
+.navigation-body-container {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.navigation-body-inner-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.navigation-body {
+  width: 50vw;
+  height: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation-body-text-container {
+  width: calc(50vw - 20vh);
+  height: 20vh;
+  float: left;
+}
+
+.navigation-body-text {
+  font-family: SFPro;
+  display: inline-block;
+}
+
+.navigation-body-text-alt {
+  text-decoration: none;
+} 
+
+.navigation-body-image-container {
+  width: 20vh;
+  height: 20vh;
+  float: right;
+}
+
+.navigation-body-image {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+  }
+
+  .navigation-body {
+    border-bottom: 3px solid #ffffff;
+  }
+
+  .navigation-body-text {
+    color: #ffffff;
+  }
+
+  .navigation-body-text-alt {
+    color: #cb00ff;
+  }
+
+  .navigation-body-text-alt:hover {
+    color: #8b01ad;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #000000;
+  }
+
+  .navigation-body {
+    border-bottom: 3px solid #000000;
+  }
+
+  .navigation-body-text {
+    color: #000000;
+  }
+
+  .navigation-body-text-alt {
+    color: #0d6efd;
+  }
+
+  .navigation-body-text-alt:hover {
+    color: #0a57ca;
+  }
+}
